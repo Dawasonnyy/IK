@@ -1,24 +1,24 @@
    function Contact(event){
-    event.preventDefault()
+    
     const loading= document.getElementById("load")
     const success = document.getElementById("successpage")
     const xbtn= document.getElementById("xbtn")
     
  
     emailjs
-        // .sendForm(
-        //     'service_99pbcfu',
-        //     'template_0wtrxot'
-        //     ,
-        //     event.target,
-        //     'zUsLhKJdRnYy1WzNN'
-        // )
+         .sendForm(
+            'service_tyizi1u',
+            'template_2gocoin'
+             ,
+            event.target,
+             'GNK1HyFEhEo9LCWhm'
+         )
         
         .then(() => {
            
             loading.style.zIndex=(-2)
-        success.style.zIndex=(20)
-        xbtn.style.zIndex=(90)
+            success.style.zIndex=(20)
+            xbtn.style.zIndex=(90)
 
         }) .catch(()=>{
             loading.style.zIndex=(-2)
@@ -29,7 +29,7 @@
         )
  
  
-    loading.style.zIndex=(20)
+        loading.style.width=("100%")
     setTimeout(() => {
         
       
@@ -62,20 +62,43 @@
 
     }
 
-    function Pip(){
+    function Pip(event){
+        event.preventDefault()
         const  loading= document.getElementById("load")
         const success = document.getElementById("successpage")
         const xbtn= document.getElementById("xbtn")
         const load = document.getElementById("contact_page")
+
+        emailjs
+        .sendForm(
+           'service_tyizi1u',
+           'template_2gocoin'
+            ,
+           event.target,
+            'GNK1HyFEhEo9LCWhm'
+        )
+        .then(() => {
+           
+            loading.style.width=(0)
+            success.style.width=("100%")
+            xbtn.style.width=("40px")
+
+        })
+
+        .catch(()=>{
+            loading.style.width=(0)
+            alert(
+                "The Email service is temporarily unavailable. Please contact me directly on "
+            )
+        }
+        )
       
        load.style.width=(0)
         loading.style.width=("100%")
         setTimeout(() => {
             
 
-            loading.style.width=(0)
-            success.style.width=("100%")
-            xbtn.style.width=("40px")
+            
 
         
       
