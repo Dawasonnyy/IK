@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init('GNK1HyFEhEo9LCWhm');
+   })();
+</script>
     <link rel="stylesheet" href="index.css" />
 
     <title>Dawit Israel</title>
@@ -16,7 +24,7 @@
             <div class="nav">
           <div ><a href="index.html"class="logo">Dawit</a></div>
           <ul class="nav__list">
-            <li class="nav__list--link home"><a href="index.html">home</a></li>
+            <li class="nav__list--link home"><a href="desktop.html">home</a></li>
     
             <li class="nav__list--link"><a href="#" onclick="ContactPop()">Contact </a></li>
     
@@ -55,7 +63,7 @@
                   
                   <div class="desktop__contact-page" >
                   
-                    <form  action="" class="desktop__input--field" id="contact_page">
+                    <form  action="" class="desktop__input--field" id="contact_page" onsubmit="Pip(event)">
                       <div class="contact__contents">
                         <div class="desktop__address">
                           <figure class="desktop_contact-fig">
@@ -65,7 +73,7 @@
                           </figure>
     
                           <figure class="desktop_contact-fig">
-                            <img src="phone.png" alt="location" class="desktop__contact-img"><br>
+                            <img src="call.png" alt="location" class="desktop__contact-img"><br>
                             <label class="contact__para">Phone: <span class="contact__span">+251 92 358 0987</span></label>
                           </figure>
                           
@@ -82,18 +90,18 @@
                   <div class="desktop__input">
 
                     <h1 class="desktop__header"> Get In touch with me</h1>
-                    <input type="text" name="user__name" id="desktop__name" placeholder="Your Name"/>
+                    <input type="text" name="user__name" id="desktop__name" placeholder="Your Name" required/>
                     <br />
                     
-                    <input type="email" name="user__email" id="desktop__email" placeholder="Your Email" />
+                    <input type="email" name="user__email" id="desktop__email" placeholder="Your Email"required />
                     <br />
                     
-                    <textarea name="message" id="desktop__message" placeholder="Your Message"></textarea>
+                    <textarea name="message" id="desktop__message" placeholder="Your Message" required></textarea>
                     <br />
-                   <button class="submit" onclick="Pip()"><a href="#">Submit</a></button>
+                   <input type="submit" value="Submit" class="submit">
                   </form>
                   </div>
-                  <div class="desktop__loading" id="load"><img class="img__spinner" src="spinner.png" alt="spinner"></div>
+                  <div class="desktop__loading" id="load"><img class="img__spinner" src="/spinner.png" alt="spinner"></div>
                 <div class="desktop__success" id="successpage" >
                   <h3 class="desktop__success-page">Looking Forward to speaking with you :)</h3>
                   <img  onclick="Remove()" src="/cancel2.png" alt="cancel"  id="xbtn" class="cancel__img">
@@ -251,10 +259,10 @@
               alt="menu"
               class="mobile_menu-img"
             />
-          </div> <div class="mobile__logo"><a href="index.html">Dawit</a></div>
+          </div> <div class="mobile__logo"><a href="mobile.html">Dawit</a></div>
         </nav>
         <ul class="mobile__menu--list" id="swipe">
-          <li class="mobile__list--links"><a href="index.html">Home</a></li>
+          <li class="mobile__list--links"><a href="mobile.html">Home</a></li>
           <li class="mobile__list--links"><a href="#"  onclick="RemoveSlide(),  ContactPop()" >Contact Me</a></li>
           <li class="mobile__list--links"><a href="#">My resume</a></li>
           
@@ -290,7 +298,7 @@
             
             <textarea name="message" id="message" placeholder="Your Message"></textarea>
             <br />
-           <button class="submit_btn" onclick="Pip()"><a href="#">Submit</a></button>
+           <button class="submit_btn" onclick="Contact(event)"><a href="#">Submit</a></button>
           </form>
           <div class="loading" id="load"><img class="img__spinner" src="/spinner.png" alt="spinner"></div>
         <div class="success" id="successpage" >
@@ -406,7 +414,7 @@
           /></a>
         </figure>
         <figure class="mobile__logo-figure">
-          <a href="https://www.instagram.com/in/dawa_sonny class="mobile__footer-logo-links"
+          <a href="https://www.instagramcom/in/dawa_sonny class="mobile__footer-logo-links"
             ><img
               src="insta.png"
               alt="insta"
