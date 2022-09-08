@@ -63,6 +63,7 @@ Navigation
     font-size: 25px;
     font-weight: 900;
     color: white;
+    text-decoration:none;
 }
 .mobile__logo a{
     color: white;
@@ -654,6 +655,7 @@ PROJECTS PAGE
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 900;
+    text-decoration:none;
 }
 .nav__list{
     list-style: none;
