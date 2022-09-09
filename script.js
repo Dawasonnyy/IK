@@ -49,52 +49,47 @@
 
 
    
-   function ContactPop(){
-    const load = document.getElementById("contact_page")
-    
-    load.style.width="100%" 
-    
-}
+  
     function ProjectsPop(){
-        const proje = document.getElementById("contact__page")
+        const load = document.getElementById("mobile__contact")
 
-        proje.style.width="100%" 
+        load.style.width="100%" 
 
     }
 
     function Pip(event){
         event.preventDefault()
-        const  loading= document.getElementById("load")
-        const success = document.getElementById("successpage")
-        const xbtn= document.getElementById("xbtn")
-        const load = document.getElementById("contact_page")
+        const  desktoploading= document.getElementById("desktop__load")
+        const desktopsuccess = document.getElementById("desktop__success")
+        const desktopxbtn= document.getElementById("desktop__xbtn")
+        const desktopload = document.getElementById("desktop__contact")
 
         emailjs
-        .sendForm(
-           'service_tyizi1u',
-           'template_2gocoin'
-            ,
-           event.target,
-            'GNK1HyFEhEo9LCWhm'
-        )
+         .sendForm(
+            'service_tt0i0x7',
+            'template_2gocoin'
+             ,
+            event.target,
+             'GNK1HyFEhEo9LCWhm'
+         )
         .then(() => {
            
-            loading.style.width=(0)
-            success.style.width=("100%")
-            xbtn.style.width=("40px")
+            desktoploading.style.width=(0)
+            desktopsuccess.style.width=("100%")
+            desktopxbtn.style.width=("40px")
 
         })
 
         .catch(()=>{
-            loading.style.width=(0)
+            desktopload.style.width=(0)
             alert(
-                "The Email service is temporarily unavailable. Please contact me directly on "
+                "The Email service is temporarily unavailable. Please contact me directly on dawitisraell@hotmail.com"
             )
         }
         )
       
-       load.style.width=(0)
-        loading.style.width=("100%")
+        desktopload.style.width=(0)
+        desktoploading.style.width=("100%")
         setTimeout(() => {
             
 
@@ -131,19 +126,71 @@
    
     }
 
+    function Mobile(event){
+        event.preventDefault()
+        const  loader= document.getElementById("mobile__load")
+        const success = document.getElementById("mobile__success")
+        const xbtn= document.getElementById("xbtn2")
+        const load = document.getElementById("mobile__contact")
+
+        emailjs
+         .sendForm(
+            'service_zmc8yho',
+            'template_ww4pazo'
+             ,
+            event.target,
+             'GNK1HyFEhEo9LCWhm'
+         )
+       .then(() => {
+          
+        loader.style.width=(0)
+           success.style.width=("100%")
+           xbtn.style.width=("40px")
+
+       })
+
+       .catch(()=>{
+        load.style.width=(0)
+        alert(
+            "The Email service is temporarily unavailable. Please contact me directly on dawitisraell@hotmail.com"
+        )
+    }
+    )
+     
+       load.style.width=(0)
+       loader.style.width=("100%")
+       setTimeout(() => {
+           
+
+           
+
+       
+     
+     
+       }, 4500);
+  
+
+    }
+
 
 
     function Remove(){
         const swipe = document.getElementById("swipe")
-        const  loading= document.getElementById("load")
-        const suc = document.getElementById("successpage")
-        const load = document.getElementById("contact_page")
+        const  loading= document.getElementById("mobile__load")
+        const suc = document.getElementById("mobile__success")
+        const load = document.getElementById("mobile__contact")
+        const  loader= document.getElementById("desktop__load")
+        const success = document.getElementById("desktop__success")
+        const xbtn= document.getElementById("xbtn2")
+        const contact = document.getElementById("desktop__contact")
         
         
         
         swipe.style.width=(0)
         suc.style.width=(0)
         load.style.width=(0)
+        success.style.width=(0)
+       contact.style.width=(0)
        
         
         
@@ -170,14 +217,16 @@ function Select(){
     html.style.border("yellow")
 }
    
-function Mobile(){
-    const mobile = document.getElementById("mobile")
-
-    if (screen > 360 ){
-        mobile.style.display=("none")
-        
-    }
+function ContactPop(){
+   
+    const desktopload = document.getElementById("desktop__contact")
+    const input = document.getElementById("mobile__contact")
+    input.style.width="100%" 
+    desktopload.style.width="100%" 
+   
+    
 }
+
 
 //   
 // 
