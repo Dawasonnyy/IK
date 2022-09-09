@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="dI.jpg" type="image/x-icon">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -11,6 +12,12 @@
    (function(){
       emailjs.init('GNK1HyFEhEo9LCWhm');
    })();
+</script>
+
+<script type="text/javascript">
+  (function(){
+     emailjs.init('GNK1HyFEhEo9LCWhm');
+  })();
 </script>
     <link rel="stylesheet" href="index.css" />
 
@@ -63,7 +70,7 @@
                   
                   <div class="desktop__contact-page" >
                   
-                    <form  action="" class="desktop__input--field" id="contact_page" onsubmit="Pip(event)">
+                    <form  action="" class="desktop__input--field" id="desktop__contact" onsubmit="Pip(event)">
                       <div class="contact__contents">
                         <div class="desktop__address">
                           <figure class="desktop_contact-fig">
@@ -73,7 +80,7 @@
                           </figure>
     
                           <figure class="desktop_contact-fig">
-                            <img src="call.png" alt="location" class="desktop__contact-img"><br>
+                            <img src="phone.png" alt="location" class="desktop__contact-img"><br>
                             <label class="contact__para">Phone: <span class="contact__span">+251 92 358 0987</span></label>
                           </figure>
                           
@@ -90,21 +97,21 @@
                   <div class="desktop__input">
 
                     <h1 class="desktop__header"> Get In touch with me</h1>
-                    <input type="text" name="user__name" id="desktop__name" placeholder="Your Name" required/>
+                    <input type="text" name="user__name" id="desktop__name" placeholder="Your Name" />
                     <br />
                     
-                    <input type="email" name="user__email" id="desktop__email" placeholder="Your Email"required />
+                    <input type="email" name="user__email" id="desktop__email" placeholder="Your Email" />
                     <br />
                     
-                    <textarea name="message" id="desktop__message" placeholder="Your Message" required></textarea>
+                    <textarea name="message" id="desktop__message" placeholder="Your Message" ></textarea>
                     <br />
                    <input type="submit" value="Submit" class="submit">
                   </form>
                   </div>
-                  <div class="desktop__loading" id="load"><img class="img__spinner" src="/spinner.png" alt="spinner"></div>
-                <div class="desktop__success" id="successpage" >
+                  <div class="desktop__loading" id="desktop__load"><img class="img__spinner" src="/spinner.png" alt="spinner"></div>
+                <div class="desktop__success" id="desktop__success" >
                   <h3 class="desktop__success-page">Looking Forward to speaking with you :)</h3>
-                  <img  onclick="Remove()" src="/cancel2.png" alt="cancel"  id="xbtn" class="cancel__img">
+                  <img  onclick="Remove()" src="/cancel2.png" alt="cancel"  id="desktop__xbtn" class="cancel__img">
                 </div>
                
                   </div>
@@ -210,7 +217,7 @@
                       /></a>
                     </figure>
                     <figure class="desktop__logo-figure">
-                      <a href="https://www.linkedin.com/in/dawit-israel-b3a046245" class="desktop__footer-logo-links"
+                      <a href="https://www.instagram.com/dawa_sonny/" class="desktop__footer-logo-links"
                         ><img
                           src="insta.png"
                           alt="insta"
@@ -263,8 +270,8 @@
         </nav>
         <ul class="mobile__menu--list" id="swipe">
           <li class="mobile__list--links"><a href="mobile.html">Home</a></li>
-          <li class="mobile__list--links"><a href="#"  onclick="RemoveSlide(),  ContactPop()" >Contact Me</a></li>
-          <li class="mobile__list--links"><a href="Resume.pdf">My resume</a></li>
+          
+          <li class="mobile__list--links"><a href="#">My resume</a></li>
           
         </ul>
         <div class="contact"onclick="Remove()" >
@@ -288,20 +295,20 @@
         
   
         <div class="mobile__contact-page" >
-          <form  action="" class="input__field" id="contact">
+          <form  action="" class="input__field" id="mobile__contact"onsubmit="Mobile(event)">
             <h1 class="mobile__header"> Get In touch with me</h1>
-            <input type="text" name="user__name" id="mobile__name" placeholder="Your Name"/>
+            <input type="text" name="mobile__name" id="mobile__name" placeholder="Your Name" required/>
             <br />
             
-            <input type="email" name="user__email" id="email" placeholder="Your Email" />
+            <input type="email" name="mobile__email" id="email" placeholder="Your Email" required/>
             <br />
             
-            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            <textarea name="message" id="mobile__message" placeholder="Your Message" required></textarea>
             <br />
-           <button class="submit_btn" onclick="Contact(event)"><a href="#">Submit</a></button>
+            <input type="submit" value="Submit" class="submit" > 
           </form>
-          <div class="loading" id="load"><img class="img__spinner" src="/spinner.png" alt="spinner"></div>
-        <div class="success" id="successpage" >
+          <div class="loading" id="mobile__load"><img class="img__spinner" src="/spinner.png" alt="spinner"></div>
+        <div class="success" id="mobile__success" >
           <h3 class="mobile__success-page">Looking Forward to speaking with you :)</h3>
           <img  onclick="Remove()" src="/cancel2.png" alt="cancel"  id="xbtn" class="cancel__img">
           
@@ -414,7 +421,7 @@
           /></a>
         </figure>
         <figure class="mobile__logo-figure">
-          <a href="https://www.instagramcom/in/dawa_sonny class="mobile__footer-logo-links"
+          <a href="https://www.instagram.com/dawa_sonny/" class="mobile__footer-logo-links"
             ><img
               src="insta.png"
               alt="insta"
@@ -448,8 +455,9 @@
 
 
 
-</div>
 
+
+</div>
     <script src="script.js"></script>
   </body>
 </html>
