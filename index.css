@@ -88,10 +88,10 @@ Navigation
     left: 0;
     background-color: greenyellow;
     
-    overflow: hidden;
+    
     width: 0;
     height: 100%;
-    display: none;
+    overflow: hidden;
     z-index: 100;
     justify-content: center;
     align-items: center;
@@ -101,6 +101,7 @@ Navigation
 .mobile__list--links{
     margin: 12px 0;
     list-style: none;
+    z-index: 100;
     
 }
 .mobile__list--links a{
@@ -110,6 +111,7 @@ Navigation
     color:black;
     text-decoration: none;
     padding-left: 10px;
+    z-index: 100;
    
 }
 
@@ -914,9 +916,7 @@ hr {
     
 }
 
-.submit a{
-    color:  black;
-}
+
 
 
 .desktop__contact-page{
