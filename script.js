@@ -183,9 +183,11 @@
         const success = document.getElementById("desktop__success")
         const xbtn= document.getElementById("xbtn2")
         const contact = document.getElementById("desktop__contact")
+        const page = document.getElementById("page")
         
         
-        
+         
+        page.style.width=(0)
         swipe.style.width=(0)
         suc.style.width=(0)
         load.style.width=(0)
@@ -221,7 +223,10 @@ function ContactPop(){
    
     const desktopload = document.getElementById("desktop__contact")
     const input = document.getElementById("mobile__contact")
+    const page = document.getElementById("page")
+    
     input.style.width="100%" 
+    page.style.width="100%" 
     desktopload.style.width="100%" 
    
     
