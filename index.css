@@ -137,6 +137,7 @@ MOBILE MAIN
     padding-top: 30px;
    justify-content: center;
    align-items: center;
+   z-index: 100;
     
     text-align: center;
     
@@ -254,10 +255,10 @@ CONTACT
 .mobile__contact-page{
     position: fixed;
     top: 25%;
-    width: 100%;
+    width: 0;
     height: 300px;
     overflow: hidden;
-    z-index: 98;
+   
    
 
     
@@ -274,7 +275,7 @@ CONTACT
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: 99;
+    
 }
 
 .loading{
